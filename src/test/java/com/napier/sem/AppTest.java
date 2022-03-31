@@ -16,7 +16,7 @@ public class AppTest {
     @BeforeAll
     static void init() {
         app = new App();
-        app.connect("localhost:33060",0);
+        app.connect("db:3306", 3000);
     }
 
     @Test
