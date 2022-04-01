@@ -16,7 +16,7 @@ public class AppTest {
     @BeforeAll
     static void init() {
         app = new App();
-        app.connect("localhost:33060", 0);
+
     }
 
     @Test
@@ -41,24 +41,7 @@ public class AppTest {
     }
 
     //getCitiesBtPop
-    @Test
-    void capitalCityTest() throws SQLException {
 
-        ArrayList<CapitalCityReport> cp = app.getCitiesBtPop();
-        CapitalCityReport cpr=null ;
-        for (CapitalCityReport ci: cp)
-        {
-          if (  ci.getName().equals("Shanghai"))
-            {
-              cpr = ci;
-              break;
-          }
 
-        }
-        //Shanghai	China	9696300
-        assertEquals("Shanghai",cpr.getName());
-        assertEquals("China",cpr.getCountry());
-        assertEquals("9696300",cpr.getPopulation());
 
     }
-}
