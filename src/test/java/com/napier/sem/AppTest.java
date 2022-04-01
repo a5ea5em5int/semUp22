@@ -24,12 +24,7 @@ public class AppTest {
         app.display(null);
     }
 
-    @Test
-    void CitiesBtPopTestNull() throws SQLException {
-        // ArrayList<CapitalCityReport> cities =app.getCitiesBtPop();
-        app.displayCapitalCity(null);
 
-    }
 
     @Test
     void CitiesBtPopCityNull() throws SQLException {
