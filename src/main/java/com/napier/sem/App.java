@@ -101,6 +101,9 @@ public class App
             }
         }
     }
+
+
+
     public ArrayList<Country> getAllCountriesInfobyPopulation() throws SQLException {
         String sql ="select Name,Continent,Region,Capital,Population from country order by Population desc";
         PreparedStatement pstmt = con.prepareStatement(sql);
